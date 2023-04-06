@@ -1,46 +1,77 @@
-* {
-   box-sizing: border-box;
+/*colors:  
+#FFFFFF - white background
+#F8F8F8 - gray background
+#1B1C21 - text color black
+#7E7E82 - text color gray
+#B8FFEC - focus border green
+#41F6D7 - bright green for icons
+#FF3E79 - pink for icons*/
+.header {
+   background-color: #FFFFFF;
 }
-.container {
-   width: 100px;
-   height: 100px;
-   background-color: blueviolet;
-   margin: 10px;
-   color: white;
-   font-size: 30px;
-   padding-top: 30px;
-   text-align: center;
-   float: left;
+.navbar {
+   display: flex;
 }
-
-.container2 {
-   width: 100px;
-   height: 100px;
+.navbar__icon {
+   margin: 5px;
+   width: 50px;
+   height: 50px;
    background-color: tomato;
-   margin: 10px;
-   color: white;
-   font-size: 30px;
-   padding-top: 30px;
-   text-align: center;
-   float: right;
 }
-.container:nth-child(3n+4){
-   clear:left;
+.navbar__logo {
+   margin: 5px;
+   width: 100px;
+   height: 50px;
+   background-color: blueviolet;
 }
+.screen1 {
+   background-color: #F8F8F8;
+}
+.screen1__title-container {
+   display: flex;
+}
+.title {
+   font-size: 28px;
+}
+.screen1__highlight {
+   width: 4px;
+   height: 40px;
+   background-color: #41F6D7;
+}
+.screen1__scroll{
+   display: flex;
+   flex-wrap: wrap;
+   overflow: hidden;
+   width: 100%;
+   height: auto;
+   border: 2px solid #878787;
+}
+.screen1__subheader-container {
+   width: 246px;
+   height: 40px;
+   display: flex;
+   border-radius: 6px;
+   border: 2px solid #878787;
+}
+.screen1__subheader-container:hover {
+   border: 2px solid #B8FFEC;
+   background-color: #FFFFFF;
+}
+.screen1__subheader {
+   text-transform: capitalize;
+   display: block;
+   margin: auto;
+}
+.subheader {
+   font-size: 16px;
+   color: #7E7E82;
+}
+.screen1__article {
+}
+.screen1__article{
 
-.container2:nth-child(3n+4){
-   clear:right;
 }
-p {
-   clear:both;
+.screen1__logo-photo {
+   width: 100%;
+   height: auto;
 }
-.wrapper {
-   display: inline-block;
-}
-.wrapper:nth-child(2n){
-   float: right;
-}
-.wrapper:nth-child(2n+1){
-   float: left;
-}
-
