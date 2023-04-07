@@ -19,38 +19,6 @@ html {
    overflow-y: scroll;
    scrollbar-width: none;
 }
-html {
-   overflow: -moz-scrollbars-none;}
-:root {
-      scrollbar-width: none !important
-  }
-  ::-webkit-scrollbar { /* Webkit */
-   width      : 0;  /* ширина scrollbar'a */
-   background : transparent  /* опционально */
-}
-
-html {
-   -ms-overflow-style : none;  /* IE 10+ */
-   scrollbar-width    : none /* Firefox */
-}
-@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul [show]"); /* only needed once */
-:-moz-any(#content,#appcontent) browser{
-   margin-right:-14px!important;
-   overflow-y:scroll;
-   margin-bottom:-14px!important;
-   overflow-x:scroll;
-  }
-  @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul [show]"); /* only needed once */
-
-  :-moz-any(#content,#appcontent) browser{
-   margin-right:-14px!important;
-   overflow-y:scroll;
-   margin-bottom:-14px!important;
-   overflow-x:scroll;
-  }
-  body {
-   overflow-x: hidden !important;
- }
 /*! HEADER*/
 .header {
    background-color: #FFFFFF;
