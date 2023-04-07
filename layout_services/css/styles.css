@@ -6,7 +6,9 @@
 #B8FFEC - focus border green
 #41F6D7 - bright green for icons
 #FF3E79 - pink for icons*/
-
+::-webkit-scrollbar {
+   width: 0;
+ }
 /*! HEADER*/
 .header {
    background-color: #FFFFFF;
@@ -23,33 +25,38 @@
    min-height: 40px;
    justify-content: space-between;
    margin: auto 16px auto 0;
+   background-repeat: no-repeat;
 }
-
+.navbar__icon-text {
+   display: none;
+   font-size: 16px;
+}
 .navbar__icon:nth-child(1){
    display: block;
    margin-left: 16px;
    background: url(../img/burger.svg);
 }
-.navbar__icon:nth-child(2){
-}
-.navbar__icon:nth-child(3){
-}
-.navbar__icon:nth-child(4){
-}
-.navbar__icon:nth-child(5){
-}
+
 .navbar__icon:nth-child(6){
+   background-image: url(../img/call.svg);
 }
 .navbar__icon:nth-child(7){
+   background-image: url(../img/chat.svg);
 }
 .navbar__icon:nth-child(8){
+   background-image: url(../img/profile.svg);
+}
+.navbar__divider:nth-child(10){
+   display: none;
+}
+.navbar__icon:nth-child(11){
    display: block;
    margin-left: auto;
    background-image: url(../img/repair.svg);
 }
-.navbar__icon:nth-child(9){
+.navbar__icon:nth-child(12){
    display: block;
-   background-image: url(../img/checkstatus.png);
+   background-image: url(../img/checkstatus.svg);
 }
 .navbar__logo {
    min-width: 96.55px;
@@ -100,7 +107,7 @@
 }
 .screen1__scroll{
    display: flex;
-   overflow: hidden;
+   overflow: auto;
    width: 100%;
    height: auto;
    margin: 24px 16px;
@@ -142,6 +149,9 @@
    font-weight: 500;
    color: #7E7E82;
 }
+.screen1__article {
+   padding-bottom: 36px;
+}
 .screen1__logo-photo {
    width: 100%;
    height: auto;
@@ -149,8 +159,8 @@
 .screen1__paragraf {
    max-height: 90px;
    overflow: hidden;
-   margin-left: 16px;
    margin-right: 16px;
+   margin-left: 16px;
    line-height: 18px;
    white-space: pre-line;
 }
@@ -159,7 +169,7 @@
    display: flex;
    width: 132px;
    height: 24px;
-   margin: 16px 0 16px 16px ;
+   margin: 16px 0 16px 16px;
    font-weight: 600;
 }
 .screen1__drop-down {
@@ -177,4 +187,141 @@
 }
 .screen1__drop-down-text {
    margin: auto;
+}
+
+@media (min-width:768px) {
+   .navbar__icon:nth-child(1){
+      margin-right: 20px;
+      order: -2;
+   }
+   .navbar__divider:nth-child(5) {
+      order: -1;
+      margin-left: 0;
+      margin-right: 20px;
+   }
+   .navbar__icon:nth-child(6){
+      display: block;
+      margin-left: auto;
+   
+   }
+   .navbar__icon:nth-child(7){
+      display: block;
+   
+   }
+   .navbar__icon:nth-child(8){
+      display: block;
+      margin-right: 0;
+   
+   }
+   .navbar__divider:nth-child(10){
+      display: block;
+      margin-left: 20px;
+   }
+   .navbar__icon:nth-child(11) {
+      margin-left: 20px;
+   }
+   .screen1__highlight {
+      margin-right: 18px;
+   }
+   .screen1__scroll {
+      margin-left: 24px;
+   }
+   .screen1__article {
+      display: flex;
+      padding-bottom: 40px;
+   }
+   .screen1__paragraf {
+      margin-left: 24px;
+      min-height: 160px;
+   }
+   .screen1__logo-photo {
+      width: 50%;
+      border-radius: 5px;
+      margin: 0 24px 0 48px;
+   }
+}
+@media (min-width: 1120px)
+{
+   .header {
+      height: 42px;
+      background-color: #F8F8F8;
+   }
+   .navbar__logo {
+      display: none;
+   }
+   .navbar__icon:nth-child(1){
+      display: none;
+   }
+   .navbar__icon:nth-child(6){
+      display: none;
+   }
+   .navbar__icon:nth-child(7){
+      display: none;
+   
+   }
+   .navbar__icon:nth-child(8){
+      display: none;   
+   }
+   .navbar__divider{
+      display: none;
+   }
+   .navbar__divider:nth-child(10){
+      display: none;
+   }
+   .navbar__icon {
+      background-position: 100% 100%;
+   }
+   .navbar__icon:nth-child(11){
+      width: 180px;
+      margin-left: auto;
+      position: absolute;
+      top: 42px;
+      right: 232px;
+   }
+   .navbar__icon:nth-child(12){
+      position: absolute;
+      width: 173px;
+      top: 42px;
+      right: 32px;
+      display: flex;
+      margin-right: 0;
+   }
+   .navbar__icon-text {
+      display: block;
+      position: relative;
+      top: 13px;
+   }
+   .screen1__title-container {
+      padding-top: 0;
+   }
+   .screen1__opacity {
+      display: none;
+   }
+   .screen1__highlight {
+      margin-right: 30px;
+   }
+   
+   .screen1__scroll {
+      margin-left: 34px;
+      margin-right: 32px;
+      overflow: none;
+      flex-wrap: wrap;
+   }
+   
+   .screen1__article {
+      display: flex;
+      padding-bottom: 49px;
+      
+   }
+   .screen1__paragraf {
+      margin-left: 34px;
+   }
+   .screen1__read-more {
+      margin-left: 32px;
+   }
+   .screen1__logo-photo {
+      width: 50%;
+      border-radius: 10px;
+      margin: 0 32px 0 36px;
+   }
 }
