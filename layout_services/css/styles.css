@@ -6,52 +6,72 @@
 #B8FFEC - focus border green
 #41F6D7 - bright green for icons
 #FF3E79 - pink for icons*/
+
+/*! HEADER*/
 .header {
    background-color: #FFFFFF;
+   height: 88px;
 }
 .navbar {
+   height: 100%;
    display: flex;
 }
 .navbar__icon {
    margin: 5px;
    width: 50px;
    height: 50px;
+   margin-top: auto;
+   margin-bottom: auto;
    background-color: tomato;
 }
 .navbar__logo {
-   margin: 5px;
-   width: 100px;
+   min-width: 96.55px;
+   min-height: 50.81px;
+   margin-top: auto;
+   margin-bottom: auto;
    height: 50px;
-   background-color: blueviolet;
+   background-image: url(../img/logo.svg);
 }
+/*! SCREEN 1*/
 .screen1 {
    background-color: #F8F8F8;
 }
 .screen1__title-container {
    display: flex;
+   padding-top: 24px;
 }
 .title {
    font-size: 28px;
 }
+.screen1__title {
+   display: block;
+   margin-top: auto;
+   margin-bottom: auto;
+}
 .screen1__highlight {
-   width: 4px;
+   position: relative;
+   top: 0;
+   left: -4px;
+   width: 8px;
    height: 40px;
+   margin-right: 12px;
+   border-radius: 10px;
    background-color: #41F6D7;
 }
 .screen1__scroll{
    display: flex;
-   flex-wrap: wrap;
    overflow: hidden;
    width: 100%;
    height: auto;
-   border: 2px solid #878787;
+   margin: 24px 16px;
 }
 .screen1__subheader-container {
    width: 246px;
    height: 40px;
+   min-width: 246px;
+   min-height: 40px;
    display: flex;
    border-radius: 6px;
-   border: 2px solid #878787;
 }
 .screen1__subheader-container:hover {
    border: 2px solid #B8FFEC;
@@ -66,12 +86,35 @@
    font-size: 16px;
    color: #7E7E82;
 }
-.screen1__article {
-}
-.screen1__article{
-
-}
 .screen1__logo-photo {
    width: 100%;
    height: auto;
+}
+.screen1__paragraf {
+   max-height: 90px;
+   overflow: auto;
+   margin-left: auto;
+   margin-right: auto;
+}
+.screen1__read-more {
+   display: flex;
+   width: 132px;
+   height: 24px;
+   margin: 16px 0 16px 16px ;
+}
+.screen1__drop-down {
+   width: 24px;
+   height: 24px;
+}
+.screen1__drop-line {
+   margin: auto;
+   width: 10px;
+   height: 10px;
+   transform: rotate(45deg);
+   border-radius: 1px;
+   border-right: 3px solid #41F6D7;
+   border-bottom: 3px solid #41F6D7;
+}
+.screen1__drop-down-text {
+   margin: auto;
 }
