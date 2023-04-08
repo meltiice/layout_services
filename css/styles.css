@@ -248,9 +248,10 @@ html {
       min-height: 160px;
    }
    .screen1__logo-photo {
-      width: 50%;
       border-radius: 5px;
-      margin: 0 24px 0 48px;
+      width: 100%;
+      min-width: 40%;
+      height: 100%;
    }
 }
 @media (min-width: 1120px)
