@@ -26,7 +26,10 @@ html {
 }
 .navbar {
    height: 100%;
+}
+.navbar__ul {
    display: flex;
+   height: 100%;
 }
 .navbar__icon {
    display: none;
