@@ -61,7 +61,7 @@ html {
 }
 .navbar__icon:nth-child(11){
    display: block;
-   margin-left: auto;
+   margin-left: 16px;
    background-image: url(../img/repair.svg);
 }
 .navbar__icon:nth-child(12){
@@ -82,7 +82,7 @@ html {
    margin-top: auto;
    margin-bottom: auto;
    background-color: #EAEAEA;
-   margin-left: 16px;
+   margin-left: auto;
 }
 .navbar__repair {
    margin: 0;
@@ -316,6 +316,7 @@ html {
    }
    
    .screen1__scroll {
+      width: 95%;
       margin-left: 34px;
       margin-right: 32px;
       overflow: none;
