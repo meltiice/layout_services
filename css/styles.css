@@ -19,6 +19,12 @@ html {
    overflow-y: scroll;
    scrollbar-width: none;
 }
+body {
+   overflow: hidden;
+}
+main {
+   overflow: hidden;
+}
 button {
    background-color: transparent;
 }
@@ -93,6 +99,9 @@ button {
 .screen1 {
    background-color: #F8F8F8;
    width: 100%;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
 }
 .screen1__title-container {
    display: flex;
@@ -118,7 +127,6 @@ button {
    overflow: auto;
    width: 100%;
    padding: 24px 16px 0 16px;
-   overflow: auto;
    -ms-overflow-style: none; /* IE 11 */
    scrollbar-width: none; /* Firefox 64 */
 }
