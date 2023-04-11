@@ -11,18 +11,14 @@
 <body>
    <header class="header">
       <nav class="navbar">
-         <ul class="navbar__ul">
-         <!--1--><li class="navbar__icon"></li>
-         <!--2--><li class="navbar__icon"></li>
-         <!--3--><li class="navbar__icon"></li>
-         <!--4--><li class="navbar__logo"></li>
-         <!--5--><li class="navbar__icon"></li>
-         <!--6--><li class="navbar__icon"></li>
-         <!--7--><li class="navbar__icon"></li>
-         <!--8--><li class="navbar__icon"></li>
-         <!--9--><li class="navbar__icon"><button type="button" class="navbar__icon-text">Оставить заявку</button></li>
-         <!--10--><li class="navbar__icon"><button type="button" class="navbar__icon-text">Статус ремонта</button></li>
-         </ul>
+         <button type="button" class="navbar__burger icon"></button>
+         <button type="button" class="navbar__search icon"></button>
+         <div class="navbar__logo"></div>
+         <button type="button" class="navbar__call icon"></button>
+         <button type="button" class="navbar__message icon"></button>
+         <button type="button" class="navbar__contact icon"></button>
+         <button type="button" class="navbar__request icon"><span class="navbar__button-text">Оставить заявку</span></button>
+         <button type="button" class="navbar__repair icon"><span class="navbar__button-text">Статус ремонта</span></button>
       </nav>
    </header>
    <main>
@@ -30,15 +26,15 @@
       <div class="screen1__title-container">
          <div class="screen1__highlight"></div>
          <h1 class="screen1__title title">Услуги и сервисы</h1></div>
-      <div class="screen1__scroll">
-         <div class="screen1__opacity"></div>
-         <div class="screen1__subheader-container"><h2 class="screen1__subheader subheader">Ремонтируемые бренды</h2></div>
-         <div class="screen1__subheader-container"><h2 class="screen1__subheader subheader">Ремонтируемые устройства</h2></div>
-         <div class="screen1__subheader-container"><h2 class="screen1__subheader subheader">Цены на услуги</h2></div>
-         <div class="screen1__subheader-container"><h2 class="screen1__subheader subheader">Адреса сервисных центров</h2></div>
-         <div class="screen1__subheader-container"><h2 class="screen1__subheader subheader">Специальные цены</h2></div>
-         <div class="screen1__subheader-container"><h2 class="screen1__subheader subheader">Отзывы</h2></div>
-      </div>
+         <ul class="screen1__scroll">
+            <li class="screen1__opacity"></li>
+            <li class="screen1__subheader-container screen1__subheader-container-active"><h2 class="screen1__subheader subheader">Ремонтируемые бренды</h2></li>
+            <li class="screen1__subheader-container"><h2 class="screen1__subheader subheader">Ремонтируемые устройства</h2></li>
+            <li class="screen1__subheader-container"><h2 class="screen1__subheader subheader">Цены на услуги</h2></li>
+            <li class="screen1__subheader-container"><h2 class="screen1__subheader subheader">Адреса сервисных центров</h2></li>
+            <li class="screen1__subheader-container"><h2 class="screen1__subheader subheader">Специальные цены</h2></li>
+            <li class="screen1__subheader-container"><h2 class="screen1__subheader subheader">Отзывы</h2></li>
+         </ul>
       <div class="screen1__article">
          <div class="screen1__paragraf-container">
             <p class="screen1__paragraf">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
@@ -49,13 +45,7 @@
 
 Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
             </p>
-            <div class="screen1__read-more">
-               <div class="screen1__drop-down">
-                  <div class="screen1__drop-line"></div>
-                  <div class="screen1__drop-line"></div>
-               </div>
-               <p class="screen1__drop-down-text">Читать далее</p>
-            </div>
+            <button class="screen1__read-more">Читать далее</button>
          </div>
          <img class="screen1__logo-photo" src="./img/logophoto.svg" alt="Фото логотипа компании">
       </div>
