@@ -27,7 +27,6 @@ button {
    background-color: #FFFFFF;
    width: 100%;
    height: 88px;
-   height: 100%;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -39,14 +38,11 @@ button {
    background-repeat: no-repeat;
    cursor: pointer;
 }
-.header__burger, .header__search, .header__call, 
-.header__message, .header__contact, .header__request, .header__repair{
-   margin-right: 16px;
-}
 .header__burger{
    display: block;
    margin-left: 16px;
    background: url(../img/burger.svg);
+   margin-right: 16px;
 }
 .header__search{
    background-image: url(../img/search.svg);
@@ -60,10 +56,21 @@ button {
 .header__contact{
    background-image: url(../img/profile.svg);
 }
+.header__container-1 {
+   display: none;
+}
+.header__container-2 {
+   display: flex;
+   margin-left: auto;
+   width: 134px;
+   justify-content: flex-end;
+   align-items: center;
+   padding-right: 16px;
+}
 .header__request{
    display: block;
-   margin-left: auto;
-   background-image: url(../img/repair.svg);
+   margin-right: 16px;
+   background-image: url(../img/checkstatus.svg);
 }
 .header__request::before {
    content: "";
@@ -71,11 +78,11 @@ button {
    background-color: #EAEAEA;
    width: 2px;
    height: 32px;
-   transform: translateX(-16px);
+   transform: translateX(-20px);
 }
 .header__repair{
    display: block;
-   background-image: url(../img/checkstatus.svg);
+   background-image: url(../img/repair.svg);
 }
 .header__logo {
    min-width: 96.55px;
@@ -83,7 +90,7 @@ button {
    height: 50px;
    background-image: url(../img/logo.svg);
 }
-.header__button-text {
+.title__button-text {
    display: none;
    font-size: 16px;
 }
@@ -181,21 +188,16 @@ button {
    display: flex;
    width: 132px;
    height: 24px;
-   margin: 16px 0 16px 30px;
+   margin: 16px 0 16px 16px;
    align-items: center;
    font-weight: 500;
    background: none;
 }
 .screen1__read-more::before {
-   content: "";
-   width: 7px;
-   height: 7px;
-   margin-right: 16px;
-   border-bottom: 2px solid #41F6D7;
-   border-right: 2px solid #41F6D7;
-   box-shadow: 2px 2px 0 0 #F8F8F8,
-   4px 4px 0 0 #41F6D7;
-   transform: translate(0, -5px) rotate(45deg);
+   content: url("../img/expand.svg");
+   width: 24px;
+   height: 24px;
+   margin-right: 8px;
 }
 .screen1__drop-down {
    width: 24px;
@@ -227,16 +229,26 @@ button {
    .header__logo {
       margin-left: 20px;
    }
+   .header__container-1 {
+      display: flex;
+      margin-left: auto;
+      width: 172px;
+      height: 40px;
+      padding-right: 22px;
+      justify-content: space-between;
+   }
+   .header__container-2 {
+      margin-left: 0;
+      padding-right: 24px;
+   }
    .header__call{
       display: block;
-      margin-left: auto;
    }
    .header__message{
       display: block;
    }
    .header__contact{
       display: block;
-      margin-right: 20px;
    }
    .header__request{
       margin-left: 20px;
@@ -263,7 +275,7 @@ button {
       min-height: 160px;
    }
    .screen1__read-more {
-      margin-left: 5px;
+      margin: 14px 0 0 0;
    }
    .screen1__logo-photo {
       border-radius: 5px;
@@ -281,6 +293,9 @@ button {
       padding-right: 32px;
       justify-content: right;
    }
+   .header__container-1, .header__container-2 {
+      display: none;
+   }
    .header__burger, .header__logo, .header__call,
     .header__message, .header__contact{
       display: none;
@@ -288,10 +303,21 @@ button {
    .header__burger::after, .header__request::before  {
       display: none;
    }
-   .header__button-text {
+   .screen1__title {
+      margin-right: auto;
+   }
+   .title__button-text {
       display: inline-block;
-      width: 100%;
+      width: 173px;
+      height: 40px;
       text-align: left;
+      line-height: 38px;
+      margin: auto 32px auto 0;
+      background: url(../img/checkstatus.svg) no-repeat 100% 100%;
+   }
+   .title__button-text--repair {
+      background-image: url(../img/repair.svg);
+      width: 168px;
    }
    .header__request, .header__repair{
       width: 173px;
@@ -300,10 +326,6 @@ button {
    }
    .header__repair {
       width: 168px;      
-   }
-   .header__icon {
-      background-position: 100% 100%;
-      position: relative;
    }
    .header__icon-text {
       display: block;
@@ -336,7 +358,7 @@ button {
       padding: 0;
    }
    .screen1__read-more {
-      margin-left: 5px;
+      margin: 14px 0 0 0;
    }
    .screen1__logo-photo {
       width: 50%;
