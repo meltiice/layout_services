@@ -1,0 +1,150 @@
+/*colors:  
+#FFFFFF - white background
+#F8F8F8 - gray background
+#1B1C21 - text color black
+#7E7E82 - text color gray
+#B8FFEC - focus border green
+#41F6D7 - bright green for icons
+#FF3E79 - pink for icons
+Блок должен быть шириной 320 пикселей 
+и фиксироваться в левой части экрана 
+независимо от размера экрана. 
+При наведении стиль кнопок плавно меняется,
+возьмите для этого какой-нибудь css filter
+ или opacity.*/
+ .shadow {
+   background-color: #c6c6c6;
+   opacity: 10%;
+   width: 100vw;
+   height: 100vh;
+   z-index: 1;
+   position: absolute;
+ }
+/*!HEADER*/
+ .menu {
+   width: 320px;
+   height: 100vh;
+   font-size: 16px;
+   padding: 24px 24px 32px 24px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   background-color: #ffffff;
+   box-shadow: -2px 0 4px 0 rgba(69, 79, 126, 0.02),
+   16px 0 52px 0 rgba(14, 24, 80, 0.2);
+   z-index: 2;
+   position: absolute;
+   top:0;
+   left: 0;
+ }
+ .menu-list {
+   width: 100%;
+   height: auto;
+   position: relative;
+ }
+ .menu-header {
+   display: flex;
+   width: 100%;
+   justify-content: left;
+   align-items: center;
+   padding-bottom: 24px;
+ }
+ .icon {
+   min-width: 40px;
+   min-height: 40px;
+   border-radius: 50%;
+   background-color: #FF3E79;
+   background-repeat: no-repeat;
+   cursor: pointer;
+}
+.icon:hover {
+   box-shadow: 0 0 0 3px rgba(255, 51, 111);
+   transition-duration: 1s;
+   transition-property: box-shadow;
+}
+
+.menu-header__burger{
+   display: block;
+   background: #FF3E79 url(../img/burger.png) no-repeat 50% 50%;
+   margin-right: 16px;
+}
+.menu-header__search{
+   background: #FF3E79 url(../img/search.png) no-repeat 50% 50%;
+   margin-left: auto;
+}
+.menu-header__logo {
+   min-width: 96.55px;
+   min-height: 50.81px;
+   height: 50px;
+}
+/*!MAIN*/
+.menu-content {
+   width: 222px;
+   margin-bottom: auto;
+}
+.item__link {
+   text-decoration: none;
+   color: #1B1C21;
+   letter-spacing: -0.2px;
+}
+.item__link:hover {
+   color: #7E7E82;
+}
+.menu__item:hover ::before {
+   content: "";
+   width: 8px;
+   height: 40px;
+   border-radius: 10px;
+   background-color: #41F6D7;
+   transform: translate(-28px, -10px);
+   position: absolute;
+ }
+.menu__item {
+   margin-top: 24px;
+}
+/*!FOOTER*/
+.container-1 {
+   display: flex;
+   width: 172px;
+   height: 40px;
+   justify-content: space-between;
+}
+.container-1__call{
+   background: #FF3E79 url(../img/call.png) no-repeat 50% 50%;
+}
+.container-1__message{
+   background: #FF3E79 url(../img/chat.png) no-repeat 50% 50%;
+}
+.container-1__contact{
+   background: #FF3E79 url(../img/profile.png) no-repeat 50% 50%;
+}
+.contacts {
+   width: 200px;
+   padding: 16px 0 40px 0;
+}
+.contacts__email {
+   margin-bottom: 12px;
+}
+.contacts__phone {
+   font-weight: 800;
+   font-size: 24px;
+   line-height: 32px;
+   letter-spacing: -0.6px;
+}
+.languages {
+   display: flex;
+   width: 87px;
+   justify-content: space-between;
+}
+.lang-radio {
+   display: none;
+}
+.lang {
+   cursor: pointer;
+}
+.lang-radio:checked + .lang{
+   color: #7E7E82;
+}
+.languages--active {
+   color: #7E7E82;
+}
